@@ -41,5 +41,23 @@ namespace ObrazApp
                 pictureBox1.Image = bmp;
             }
         }
+
+        private void btnInvert_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image != null)
+            {
+                Bitmap bmp = new Bitmap(pictureBox1.Image);
+                for (int y = 0; y < bmp.Height; y++)
+                {
+                    for (int x = 0; x < bmp.Width; x++)
+                    {
+                        Color c = bmp.GetPixel(x, y);
+                        Color inverted = Color.FromArgb(255 - c.R, 255 - c.G, 255 - c.B);
+                        bmp.SetPixel(x, y, inverted);
+                    }
+                }
+                pictureBox1.Image = bmp;
+            }
+        }
     }
 }

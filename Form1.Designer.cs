@@ -31,6 +31,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnOpen = new System.Windows.Forms.Button();
             this.btnRotate = new System.Windows.Forms.Button();
+            this.btnInvert = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,11 +63,22 @@
             this.btnRotate.UseVisualStyleBackColor = true;
             this.btnRotate.Click += new System.EventHandler(this.btnRotate_Click);
             // 
+            // btnInvert
+            // 
+            this.btnInvert.Location = new System.Drawing.Point(73, 181);
+            this.btnInvert.Name = "btnInvert";
+            this.btnInvert.Size = new System.Drawing.Size(75, 23);
+            this.btnInvert.TabIndex = 3;
+            this.btnInvert.Text = "Invert Colors";
+            this.btnInvert.UseVisualStyleBackColor = true;
+            this.btnInvert.Click += new System.EventHandler(this.btnInvert_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnInvert);
             this.Controls.Add(this.btnRotate);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.pictureBox1);
@@ -83,6 +95,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.Button btnRotate;
+        private System.Windows.Forms.Button btnInvert;
     }
 }
 
