@@ -16,5 +16,15 @@ namespace ObrazApp
         {
             InitializeComponent();
         }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Bitmapy (*.bmp)|*.bmp";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image = new Bitmap(ofd.FileName);
+            }
+        }
     }
 }
