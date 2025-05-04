@@ -47,7 +47,7 @@
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(73, 81);
+            this.btnOpen.Location = new System.Drawing.Point(73, 58);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(88, 23);
             this.btnOpen.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // btnRotate
             // 
-            this.btnRotate.Location = new System.Drawing.Point(73, 133);
+            this.btnRotate.Location = new System.Drawing.Point(73, 177);
             this.btnRotate.Name = "btnRotate";
             this.btnRotate.Size = new System.Drawing.Size(88, 23);
             this.btnRotate.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             // btnInvert
             // 
-            this.btnInvert.Location = new System.Drawing.Point(73, 181);
+            this.btnInvert.Location = new System.Drawing.Point(73, 224);
             this.btnInvert.Name = "btnInvert";
             this.btnInvert.Size = new System.Drawing.Size(88, 23);
             this.btnInvert.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             // btnFlip
             // 
-            this.btnFlip.Location = new System.Drawing.Point(73, 226);
+            this.btnFlip.Location = new System.Drawing.Point(73, 272);
             this.btnFlip.Name = "btnFlip";
             this.btnFlip.Size = new System.Drawing.Size(88, 23);
             this.btnFlip.TabIndex = 4;
@@ -87,9 +87,9 @@
             // 
             // btnOnlyGreen
             // 
-            this.btnOnlyGreen.Location = new System.Drawing.Point(73, 269);
+            this.btnOnlyGreen.Location = new System.Drawing.Point(73, 320);
             this.btnOnlyGreen.Name = "btnOnlyGreen";
-            this.btnOnlyGreen.Size = new System.Drawing.Size(75, 23);
+            this.btnOnlyGreen.Size = new System.Drawing.Size(88, 23);
             this.btnOnlyGreen.TabIndex = 5;
             this.btnOnlyGreen.Text = "Green Only";
             this.btnOnlyGreen.UseVisualStyleBackColor = true;
