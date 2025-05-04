@@ -32,6 +32,7 @@
             this.btnOpen = new System.Windows.Forms.Button();
             this.btnRotate = new System.Windows.Forms.Button();
             this.btnInvert = new System.Windows.Forms.Button();
+            this.btnFlip = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             // 
             this.btnOpen.Location = new System.Drawing.Point(73, 81);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(75, 23);
+            this.btnOpen.Size = new System.Drawing.Size(88, 23);
             this.btnOpen.TabIndex = 1;
             this.btnOpen.Text = "Open";
             this.btnOpen.UseVisualStyleBackColor = true;
@@ -57,7 +58,7 @@
             // 
             this.btnRotate.Location = new System.Drawing.Point(73, 133);
             this.btnRotate.Name = "btnRotate";
-            this.btnRotate.Size = new System.Drawing.Size(75, 23);
+            this.btnRotate.Size = new System.Drawing.Size(88, 23);
             this.btnRotate.TabIndex = 2;
             this.btnRotate.Text = "Rotate";
             this.btnRotate.UseVisualStyleBackColor = true;
@@ -67,17 +68,28 @@
             // 
             this.btnInvert.Location = new System.Drawing.Point(73, 181);
             this.btnInvert.Name = "btnInvert";
-            this.btnInvert.Size = new System.Drawing.Size(75, 23);
+            this.btnInvert.Size = new System.Drawing.Size(88, 23);
             this.btnInvert.TabIndex = 3;
             this.btnInvert.Text = "Invert Colors";
             this.btnInvert.UseVisualStyleBackColor = true;
             this.btnInvert.Click += new System.EventHandler(this.btnInvert_Click);
+            // 
+            // btnFlip
+            // 
+            this.btnFlip.Location = new System.Drawing.Point(73, 226);
+            this.btnFlip.Name = "btnFlip";
+            this.btnFlip.Size = new System.Drawing.Size(88, 23);
+            this.btnFlip.TabIndex = 4;
+            this.btnFlip.Text = "Flip Vertically";
+            this.btnFlip.UseVisualStyleBackColor = true;
+            this.btnFlip.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFlip);
             this.Controls.Add(this.btnInvert);
             this.Controls.Add(this.btnRotate);
             this.Controls.Add(this.btnOpen);
@@ -96,6 +108,7 @@
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.Button btnRotate;
         private System.Windows.Forms.Button btnInvert;
+        private System.Windows.Forms.Button btnFlip;
     }
 }
 

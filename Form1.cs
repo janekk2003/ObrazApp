@@ -59,5 +59,15 @@ namespace ObrazApp
                 pictureBox1.Image = bmp;
             }
         }
+
+        private void btnFlipClick(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image != null)
+            {
+                Bitmap bmp = new Bitmap(pictureBox1.Image);
+                bmp.RotateFlip(RotateFlipType.RotateNoneFlipY);
+                pictureBox1.Image = bmp;
+            }
+        }
     }
 }
