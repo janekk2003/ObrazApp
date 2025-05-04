@@ -33,6 +33,7 @@
             this.btnRotate = new System.Windows.Forms.Button();
             this.btnInvert = new System.Windows.Forms.Button();
             this.btnFlip = new System.Windows.Forms.Button();
+            this.btnOnlyGreen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,13 +83,24 @@
             this.btnFlip.TabIndex = 4;
             this.btnFlip.Text = "Flip Vertically";
             this.btnFlip.UseVisualStyleBackColor = true;
-            this.btnFlip.Click += new System.EventHandler(this.button1_Click);
+            this.btnFlip.Click += new System.EventHandler(this.btnFlip_Click);
+            // 
+            // btnOnlyGreen
+            // 
+            this.btnOnlyGreen.Location = new System.Drawing.Point(73, 269);
+            this.btnOnlyGreen.Name = "btnOnlyGreen";
+            this.btnOnlyGreen.Size = new System.Drawing.Size(75, 23);
+            this.btnOnlyGreen.TabIndex = 5;
+            this.btnOnlyGreen.Text = "Green Only";
+            this.btnOnlyGreen.UseVisualStyleBackColor = true;
+            this.btnOnlyGreen.Click += new System.EventHandler(this.btnOnlyGreen_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnOnlyGreen);
             this.Controls.Add(this.btnFlip);
             this.Controls.Add(this.btnInvert);
             this.Controls.Add(this.btnRotate);
@@ -109,6 +121,7 @@
         private System.Windows.Forms.Button btnRotate;
         private System.Windows.Forms.Button btnInvert;
         private System.Windows.Forms.Button btnFlip;
+        private System.Windows.Forms.Button btnOnlyGreen;
     }
 }
 

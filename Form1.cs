@@ -60,12 +60,36 @@ namespace ObrazApp
             }
         }
 
-        private void btnFlipClick(object sender, EventArgs e)
+        private void btnFlip_Click(object sender, EventArgs e)
         {
             if (pictureBox1.Image != null)
             {
                 Bitmap bmp = new Bitmap(pictureBox1.Image);
                 bmp.RotateFlip(RotateFlipType.RotateNoneFlipY);
+                pictureBox1.Image = bmp;
+            }
+        }
+
+        private void btnOnlyGreen_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image != null)
+            {
+                Bitmap bmp = new Bitmap(pictureBox1.Image);
+                for (int y = 0; y < bmp.Height; y++)
+                {
+                    for (int x = 0; x < bmp.Width; x++)
+                    {
+                        Color c = bmp.GetPixel(x, y);
+                        if (c.G > c.R && c.G > c.B)
+                        {
+                            bmp.SetPixel(x, y, c);
+                        }
+                        else
+                        {
+                            bmp.SetPixel(x, y, Color.Black);
+                        }
+                    }
+                }
                 pictureBox1.Image = bmp;
             }
         }
