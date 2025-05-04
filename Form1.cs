@@ -26,5 +26,20 @@ namespace ObrazApp
                 pictureBox1.Image = new Bitmap(ofd.FileName);
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRotate_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image != null)
+            {
+                Bitmap bmp = new Bitmap(pictureBox1.Image);
+                bmp.RotateFlip(RotateFlipType.Rotate90FlipNone);
+                pictureBox1.Image = bmp;
+            }
+        }
     }
 }
